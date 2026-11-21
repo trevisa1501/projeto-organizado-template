@@ -1,5 +1,6 @@
 # Manual de rotina
 
+[English](MANUAL.en.md) · Português
 ## Da ideia ao PR
 
 1. **Ideia.** Busque o assunto com `tema buscar "<assunto>"`. Se for novo, crie-o com `tema novo <slug> --titulo "<título>" --projeto "<projeto>"`.
