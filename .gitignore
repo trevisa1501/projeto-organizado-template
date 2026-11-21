@@ -1,0 +1,13 @@
+# Obsidian (estado de janela/local)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+
+# Arquivos locais desta maquina (nao versionar)
+config/projetos.local.json
+WORKTREES.local.md
+
+# Sistema operacional e temporarios
+.DS_Store
+Thumbs.db
+*.tmp

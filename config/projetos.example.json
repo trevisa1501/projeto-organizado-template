@@ -1,0 +1,14 @@
+{
+  "projetos": [
+    {
+      "nome": "HortaComunitaria",
+      "caminho": "/caminho/para/projects/HortaComunitaria",
+      "branch_principal": "main"
+    },
+    {
+      "nome": "projeto-organizado",
+      "caminho": "/caminho/para/projects/projeto-organizado",
+      "branch_principal": "main"
+    }
+  ]
+}
