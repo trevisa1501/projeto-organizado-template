@@ -1,32 +1,34 @@
 # Projeto Organizado
 
-Um template para quem constrói com IA e precisa retomar o trabalho sem reconstruir conversas. Reúne um cofre Obsidian, o CLI `tema` e uma rotina para acompanhar cada assunto da ideia ao pull request.
+English · [Português](README.pt-BR.md)
 
-## Por que eu criei
+A GitHub template for people building with AI who want to pick up where they left off. It includes an Obsidian vault, a CLI called `tema`, and a workflow for taking each idea through to a pull request.
 
-Eu conseguia tocar vários projetos com IA. O difícil era retomar o trabalho no dia seguinte. Uma ideia ficava no Telegram, a discussão avançava em outro chat e, quando eu voltava ao código, precisava descobrir qual decisão ainda valia e em qual branch o trabalho tinha ficado.
+## Why I built it
 
-Criei o Projeto Organizado para dar a cada assunto um lugar que eu e meus agentes pudéssemos consultar. A ideia vira um tema. As decisões ficam registradas por versão. Quando chega a hora de implementar, o tema aponta para o PR. No Obsidian, eu abro o painel e vejo o que está em discussão, em revisão ou concluído.
+I could work on several projects with AI. Picking up the work the next day was the hard part. An idea would start in Telegram and the discussion would continue in another chat. By the time I got back to the code, I had to figure out which decision still held and which branch had the work.
 
-## Comece em cinco minutos
+I built Projeto Organizado to give each topic a home that both my agents and I could find. An idea becomes a topic. Decisions are recorded by version. When implementation starts, the topic links to the pull request. In Obsidian, I can open the dashboard and see what's being discussed, reviewed, or finished.
 
-1. No GitHub, clique em **Use this template → Create a new repository**. Escolha **Private** se pretende registrar conversas de trabalho ou decisões internas.
-2. Clone o seu repositório e entre na pasta pelo terminal. Você precisa de Git e Node.js 22 ou superior. O CLI funciona sem instalar dependências.
-3. Rode os comandos abaixo para ver o exemplo e criar seu primeiro tema.
+## Get started
+
+1. On GitHub, click **Use this template → Create a new repository**. Choose **Private** if you'll record internal discussions or decisions.
+2. Clone your new repository and open its folder in a terminal. You'll need Git and Node.js 22 or later. The CLI has zero dependencies.
+3. Run these commands to find the bundled example, create your first topic, and refresh the dashboard.
 
 ```bash
 export PROJETO_ORGANIZADO_HOME="$PWD"
 node cli/tema.cjs buscar "horta"
-node cli/tema.cjs novo minha-ideia --titulo "Minha primeira ideia" --projeto HortaComunitaria
+node cli/tema.cjs novo my-first-idea --titulo "My first idea" --projeto HortaComunitaria
 node cli/tema.cjs painel
 ```
 
-No PowerShell, use `$env:PROJETO_ORGANIZADO_HOME = (Get-Location).Path` na primeira linha.
+In PowerShell, use `$env:PROJETO_ORGANIZADO_HOME = (Get-Location).Path` for the first line.
 
-4. Leia o [painel](PAINEL.md). Se usa Obsidian, abra a pasta como cofre e consulte o painel e a visualização de grafo. O CLI também funciona pelo terminal sem Obsidian.
+4. Read the [dashboard](PAINEL.md), or open the repository folder as an Obsidian vault to see the dashboard and graph view.
 
-Veja a [página inicial da horta](temas/pagina-inicial/pagina-inicial.md) e sua [primeira versão](temas/pagina-inicial/versoes/v1.md) para acompanhar um exemplo completo. O [manual](MANUAL.md) explica como cadastrar seus projetos, conectar agentes e sincronizar o hub.
+The CLI commands, output, and bundled example are in Portuguese. Topic titles, notes, and decisions can be written in English or Portuguese. The [English manual](MANUAL.en.md) explains the commands and status fields. The [community garden example](temas/pagina-inicial/versoes/v1.md) shows how to record an idea, decisions, and the outcome of a PR.
 
-## Testes e licença
+## Tests and license
 
-Rode `npm test` para executar os testes. O projeto está sob a [licença MIT](LICENSE).
+Run `npm test` to run the test suite. The project is available under the [MIT License](LICENSE).
